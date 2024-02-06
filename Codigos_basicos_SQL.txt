@@ -1,0 +1,61 @@
+#Conceitos Basicos
+
+#Local de download
+
+Documentação https://dev.mysql.com/doc/workbench/en/wb-installing-windows.html
+MySql https://dev.mysql.com/downloads/windows/installer/
+
+SQLite https://www.sqlite.org/index.html
+XAMPP https://www.apachefriends.org/pt_br/index.html
+
+#---------------------------------------------------
+
+#Codigos Básicos SQL - MySql
+
+#Mostrar bancos de dados:
+SHOW DATABASES;
+
+#Criar um banco de dados:
+CREATE DATABASE nome_do_seu_banco_de_dados;
+
+#Usar um banco de dados:
+USE nome_do_seu_banco_de_dados;
+
+#Mostrar tabelas no banco de dados atual:
+USE nome_do_seu_banco_de_dados;
+
+#Mostrar tabelas no banco de dados atual:
+SHOW TABLES;
+
+#Criar uma tabela:
+CREATE TABLE nome_da_sua_tabela (
+    coluna1 tipo_de_dado,
+    coluna2 tipo_de_dado,
+    ...,  PRIMARY KEY (coluna_primaria)
+);
+
+#Inserir dados em uma tabela:
+INSERT INTO nome_da_sua_tabela (coluna1, coluna2, ...) VALUES (valor1, valor2, ...);
+
+#Selecionar dados de uma tabela:
+SELECT * FROM nome_da_sua_tabela;
+
+#Atualizar dados em uma tabela:
+UPDATE nome_da_sua_tabela SET coluna1 = novo_valor WHERE condição;
+
+#Excluir dados de uma tabela:
+DELETE FROM nome_da_sua_tabela WHERE condição;
+
+#Excluir uma tabela:
+DROP TABLE nome_da_sua_tabela;
+
+#Excluir um banco de dados:
+DROP DATABASE nome_do_seu_banco_de_dados;
+
+
+#Sites para treinar
+https://www.sqlteaching.com/
+https://sqlzoo.net/wiki/SQL_Tutorial
+https://www.w3schools.com/sql/default.asp
+http://www.tutorialspoint.com/sql/index.htm
+https://www.tutorialspoint.com/sql/index.htm
