@@ -1,0 +1,31 @@
+<?php
+// Credenciais do banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "mydatabase";
+
+// Criar conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar conexão
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Obter dados do formulário
+$user = $_POST['username'];
+$email = $_POST['email'];
+
+// Inserir dados na tabela
+$sql = "INSERT INTO users (username, email) VALUES ('$user', '$email')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Fechar conexão
+$conn->close();
+?>
