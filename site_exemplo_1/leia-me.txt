@@ -1,0 +1,1 @@
+transfira todos os arquivos para pasta htdocs no linux ou windows ou server, dentro do xampp ou lampp
