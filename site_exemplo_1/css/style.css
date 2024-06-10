@@ -57,7 +57,7 @@ input[type="text"], input[type="email"], input[type="password"], select {
 
 input[type="submit"] {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0 10px 15px;
     background-color: #f32525;
     color: white;
     padding: 15px;
@@ -93,7 +93,7 @@ p a {
 }
 
 p.forgot-password {
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin-top: 10px;
     margin-left: 10px; /* Adicione a margem à esquerda para deslocar o texto */
