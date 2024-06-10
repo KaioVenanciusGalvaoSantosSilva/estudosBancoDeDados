@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verifica se a senha fornecida pelo usuário corresponde ao hash armazenado
         if (password_verify($pass, $pass_hash)) {
             // Senha correta, redireciona para a página de sucesso
-            header("Location: sucess.html");
+            header("Location: logged.html");
             exit();
         } else {
             // Senha incorreta, redireciona para a página de erro

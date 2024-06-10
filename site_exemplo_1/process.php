@@ -28,7 +28,7 @@ $stmt->bind_param("ssssss", $firstname, $lastname, $email, $pass, $birthdate, $g
 // Executar a consulta
 if ($stmt->execute() === TRUE) {
     echo "New record created successfully";
-    header("Location: conta_criada.html");
+    header("Location: account_created.html");
 } else {
     echo "Error: " . $stmt->error;
     header("Location: index.html");
