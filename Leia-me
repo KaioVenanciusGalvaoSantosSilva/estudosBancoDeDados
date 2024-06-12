@@ -1,0 +1,5 @@
+instruções:
+importe o banco de dados
+coloque o conteudo da pasta site exemplo 1 dentro do htdocs
+lembre-se de configurar o php.ini e sendmail.ini
+
