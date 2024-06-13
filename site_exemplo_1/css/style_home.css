@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;   
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/img/imagem.jpg'); /* Adicione o caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px); /* Aplicando um desfoque de 3px na imagem de fundo */
+    z-index: -1; /* Garante que esteja por trás do conteúdo */
+}
+
+.container {
+    background-color: rgba(124, 124, 124, 0.9); /* Fundo transparente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#cart, #account {
+    position: relative;
+    margin-left: 10px;
+}
+
+#cart-items, #account-options {
+    background-color: rgba(255, 255, 255, 0.555);
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 300px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product h3 {
+    margin: 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+p, ul {
+    text-align: center;
+    padding: 0;
+}
+
+#account-options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#account-options ul li {
+    margin: 10px 0;
+}
+
+#account-options ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+}
+
+#account-options ul li a:hover {
+    background-color: #f7f7f7;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  footer .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer li {
+    margin: 0 20px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ccc;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+}
+.form-buttons {
+    display:flex;
+    justify-content: space-between;
+
+    margin-top: 20px; /* Espaçamento acima dos botões */
+
+}
+.form-buttons button {
+    padding: 10px 10px ; /* Tamanho dos botões */
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}

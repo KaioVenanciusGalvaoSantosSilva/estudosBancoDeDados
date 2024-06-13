@@ -23,6 +23,22 @@ body::before {
     z-index: -1; /* Garante que esteja por trás do conteúdo */
 }
 
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo transparente */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.message-box {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+
+}
 .form-container {
     background: rgba(255, 255, 255, 0.8); /* Adicionando uma camada de fundo semi-transparente */
     padding: 40px;

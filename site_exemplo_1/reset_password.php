@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Redefinir Senha</title>
-            <link rel="stylesheet" type="text/css" href="style_conta_criada.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
             <script>
                 // Redireciona para o index.html após 10 segundos
                 setTimeout(function(){
@@ -48,9 +48,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </script>
         </head>
         <body>
-            <div class="message-box">
-                <h1>Solicitação feita com sucesso!</h1>
-                <h1>Sua senha foi redefinida.</h1>
+            <div class="form-container">
+                <h1>Parabéns!</h1>
+                <p>Sua senha foi redefinida.</p>
                 <p>Você será redirecionado para a página de login em 10 segundos.</p>
             </div>
         </body>
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Redefinir Senha</title>
-            <link rel="stylesheet" type="text/css" href="style_conta_criada.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
             <script>
                 // Redireciona para o index.html após 10 segundos
                 setTimeout(function(){
@@ -77,18 +77,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </script>
         </head>
         <body>
-            <div class="message-box">
+            <div class="form-container">
                 <h1>Solicitação recusada!</h1>
-                <h1>Token inválido ou expirado.</h1>
+                <p>Token inválido ou expirado.</p>
                 <p>Você será redirecionado para a página de redefinição de senha em 10 segundos.</p>
             </div>
         </body>
         </html>
 
         <?php
-
-
-
 
     }
 } else if (isset($_GET['token'])) {
@@ -100,7 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Redefinir Senha</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
         <div class="form-container">

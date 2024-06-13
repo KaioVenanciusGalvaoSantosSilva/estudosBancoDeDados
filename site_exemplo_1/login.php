@@ -32,7 +32,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verifica se a senha fornecida pelo usuário corresponde ao hash armazenado
         if (password_verify($pass, $pass_hash)) {
             // Senha correta, redireciona para a página de sucesso
-            header("Location: logged.html");
+            $sql = "SELECT id,firstname,lastname,email,birthdate,gender FROM usuarios WHERE email = '$email'";
+            $result = $conn->query($sql);
+            $user = $result->fetch_assoc();
+
+            session_start();
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_firstname'] = $user['firstname'];
+            $_SESSION['user_lastname'] = $user['lastname'];
+            $_SESSION['user_email'] = $user['email'];
+            $_SESSION['user_birthdate'] = $user['birthdate'];
+            $_SESSION['user_gender'] = $user['gender'];
+            header("Location: home.html");
             exit();
         } else {
             // Senha incorreta, redireciona para a página de erro
@@ -47,5 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Fecha a conexão com o banco de dados
     $conn->close();
+    
 }
 ?>
