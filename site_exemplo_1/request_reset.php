@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
     $stmt->execute();
 
     // Enviar email com o link de redefinição (supondo que a função mail esteja configurada)
-    $reset_link = "http://localhost/reset_password.php?token=" . $token; //link para combinhar com o token
+    $reset_link = "http://localhost/reset_password.php?token=" . $token; //link para combinar com o token
     $subject = '=?utf-8?B?' . base64_encode("Redefinição de Senha") . '?=';
     // Codificar o assunto em UTF-8
     $encoded_subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';        
