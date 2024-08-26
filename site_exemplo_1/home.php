@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Verifica se o usuário está logado
+if (!isset($_SESSION['user_id'])) {
+    // Redireciona para a página de login se não estiver logado
+    header("Location: login.html");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,11 +19,11 @@
 <body>
     <header>
         <div class="container">
-            <h1><a href="home.html">Minha Loja</a></h1>
+            <h1><a href="home.php">Minha Loja</a></h1>
             <nav>
                 <ul>
                     <li><a href="#">Produtos</a></li>
-                    <li><a href="company.html">Sobre a Empresa</a></li>
+                    <li><a href="company.php">Sobre a Empresa</a></li>
                 </ul>
             </nav>
             <div class="header-buttons">
@@ -23,7 +33,7 @@
                         <ul>
                             <li><a href="#">Minhas compras</a></li>
                             <li><a href="config.php">Configurações</a></li>
-                            <li><a href="login.html">Sair</a></li>
+                            <li><a href="logout.php">Sair</a></li>
                         </ul>
                     </div>
                 </span>

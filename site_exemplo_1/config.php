@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.html");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -13,11 +17,11 @@ session_start();
 <body>
     <header>
         <div class="container">
-            <h1><a href="home.html">Minha Loja</a></h1>
+            <h1><a href="home.php">Minha Loja</a></h1>
             <nav>
                 <ul>
-                    <li><a href="home.html">Produtos</a></li>
-                    <li><a href="company.html">Sobre a Empresa</a></li>
+                    <li><a href="home.php">Produtos</a></li>
+                    <li><a href="company.php">Sobre a Empresa</a></li>
                 </ul>
             </nav>
             <div class="header-buttons">
@@ -27,7 +31,7 @@ session_start();
                         <ul>
                             <li><a href="#">Minhas compras</a></li>
                             <li><a href="#">Configurações</a></li>
-                            <li><a href="login.html">Sair</a></li>
+                            <li><a href="logout.php">Sair</a></li>
                         </ul>
                     </div>
                 </span>
@@ -45,7 +49,7 @@ session_start();
     <main>
         <div class="container">
             <h2>Configuração da Conta</h2>
-            <form id="configuracao-form" action="atualizar_usuario.php" method="post">
+            <form id="configuracao-form" action="update_user.php" method="post">
                 <div class="form-group">
                     <label for="firstname">Nome:</label>
                     <input type="text" id="firstname" name="firstname" value="<?php echo $_SESSION['user_firstname']; ?>" required>
