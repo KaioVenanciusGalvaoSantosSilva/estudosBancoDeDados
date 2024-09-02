@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <h2>Cadastro de Usuário</h2>
+    <form action="inserir_usuario.php" method="POST">
+        <label for="firstname">Primeiro Nome:</label><br>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Sobrenome:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="pass">Senha:</label><br>
+        <input type="password" id="pass" name="pass" required><br><br>
+
+        <label for="birthdate">Data de Nascimento:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="gender">Gênero:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+            <option value="other">Outro</option>
+        </select><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
