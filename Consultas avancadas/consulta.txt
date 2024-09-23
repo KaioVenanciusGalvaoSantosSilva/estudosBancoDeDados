@@ -1,0 +1,11 @@
+exemplo 1 - Consulta SQL para Filtrar os Funcionários:
+
+SELECT nome, departamento, salario, data_admissao
+FROM funcionarios
+WHERE salario > 50000
+  AND departamento IN ('TI', 'Financeiro')
+  AND data_admissao BETWEEN '2023-01-01' AND '2024-01-01'
+  AND nome LIKE 'J%'
+ORDER BY salario DESC;
+
+

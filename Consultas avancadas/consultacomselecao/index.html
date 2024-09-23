@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtro de Funcionários</title>
+</head>
+<body>
+    <h1>Filtro de Funcionários</h1>
+
+    <!-- Formulário com filtros para selecionar -->
+    <form method="POST" action="filtro_funcionarios.php">
+        <!-- Filtro por departamento -->
+        <label>Departamento:</label><br>
+        <input type="checkbox" name="departamento[]" value="TI"> TI<br>
+        <input type="checkbox" name="departamento[]" value="Financeiro"> Financeiro<br>
+        <input type="checkbox" name="departamento[]" value="RH"> RH<br><br>
+
+        <!-- Campo de entrada para o salário -->
+        <label>Salário maior que:</label>
+        <input type="number" name="salario" step="0.01" placeholder="Digite o valor do salário"><br><br>
+
+        <!-- Filtro por data de admissão -->
+        <label>Data de Admissão:</label><br>
+        De: <input type="date" name="data_inicio"><br>
+        Até: <input type="date" name="data_fim"><br><br>
+
+        <!-- Campo de entrada para filtro de nome -->
+        <label>Nome começa com:</label>
+        <input type="text" name="nome" placeholder="Digite o início do nome"><br><br>
+
+        <!-- Botão de submissão -->
+        <input type="submit" value="Filtrar">
+    </form>
+</body>
+</html>
