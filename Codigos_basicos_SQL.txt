@@ -53,7 +53,7 @@ DROP TABLE nome_da_sua_tabela;
 DROP DATABASE nome_do_seu_banco_de_dados;
 
 
-#Sites para treinar
+#Sites para treinar e links úteis
 https://www.sqlteaching.com/
 https://sqlzoo.net/wiki/SQL_Tutorial
 https://www.w3schools.com/sql/default.asp
